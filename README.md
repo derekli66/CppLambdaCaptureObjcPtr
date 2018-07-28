@@ -19,7 +19,7 @@ Get the `weak` reference to the parent object and then use that `weak` pointer i
 
 ```objc
 
-	__weak typeof(self) weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     _holder->setAction([=](){
         [weakSelf playSound];
     });
